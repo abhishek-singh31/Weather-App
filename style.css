@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    outline: 0;
+}
+
+body{
+    background: #9796f0;
+}
+
+h1{
+    margin: 2rem;
+    color:#fff;
+    text-align: center;
+    font-size: 3rem;
+}
+
+form{
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder{
+    color:#000;
+}
+input[type="text"]{
+    color:#fff;
+    background: transparent;
+    border:2px solid #fff;
+    padding: 10px;
+    font-size: 20px;
+    width:400px;
+    height:50px;
+}
+
+input:focus{
+    background: rgba(90, 90, 90, 0.548);
+    transition: 0.2s;
+}
+
+input[type="submit"]{
+    background: none;
+    color:#fff;
+    border:2px solid #fff;
+    margin:10px;
+    padding:10px;
+    width:80px;
+    height:50px;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background: rgba(90, 90, 90, 0.548);
+    transition: 0.2s;
+}
+
+#cityname{
+    color:#fff;
+    font-size:2rem;
+    margin:20px;
+    text-align: center;
+}
+
+#temp{
+    margin:10px;
+    font-size:1.5rem;
+    text-align: center;
+}
+
+
+
+.container.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:transparent;
+    border:2px solid #fff;
+    color:#fff;
+    width:500px;
+    margin:0 auto;
+}
+
+.desc-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#desc{
+    font-size:1.25rem;
+    margin:10px;
+}
+
+img{
+    width:80px;
+    height:80px;
+}
+
+@media screen and (max-width:500px){
+    .container.show{
+        width:320px;
+    }
+
+}
